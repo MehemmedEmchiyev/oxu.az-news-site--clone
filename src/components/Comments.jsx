@@ -46,15 +46,15 @@ export default function CommentSection({id}) {
   
   return (
     <div className="w-full md:max-w-[70%] mx-auto p-4 space-y-4">
-      <div className="flex items-start gap-3">
+      <div className="flex flex-col  md:flex-row items-start gap-3">
 
         <input
           placeholder="Join the discussion..."
           value={content}
           onChange={(e) => setNewComment(e.target.value)}
-          className="flex-1 px-4 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-500"
+          className="flex-1 px-4 w-full py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-500"
         />
-        <button onClick={addNewsComment} className="bg-blue-500 text-white px-4 py-2 rounded-md">
+        <button onClick={addNewsComment} className="w-full md:w-max bg-blue-500 text-white px-4 py-2 rounded-md">
           Comment
         </button>
       </div>
