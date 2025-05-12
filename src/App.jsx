@@ -12,6 +12,7 @@ import Register from './components/Register';
 import { ToastContainer, toast } from 'react-toastify';
 import User from './components/User';
 import { useDispatch , useSelector} from 'react-redux'
+import NewsPage from './pages/NewsPage';
 
 function ScrollToTop() {
 
@@ -51,6 +52,8 @@ function App() {
             <Route path='register' element={<Register />} />
             <Route path='user' element={<User />} />
           </Route>
+          <Route path='/news/:value' element={<NewsPage />} />
+
         </Routes>
       </div>
       <Footer />

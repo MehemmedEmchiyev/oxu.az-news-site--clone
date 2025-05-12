@@ -7,6 +7,7 @@ import loginSlice  from './loginSlice'
 import registerSlice  from './registerSlice'
 import commentSlice  from './commentsSlice'
 import lightDarkModeSlice from './lightdarkSlice'
+import searchSlice  from './searchSlice'
 export const store = configureStore({
   reducer: {
     news : newsSlice,
@@ -16,6 +17,7 @@ export const store = configureStore({
     login : loginSlice,
     register : registerSlice,
     comments : commentSlice,
-    mode : lightDarkModeSlice
+    mode : lightDarkModeSlice,
+    search : searchSlice
   },
 })
