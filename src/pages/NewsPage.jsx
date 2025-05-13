@@ -18,7 +18,7 @@ function NewsPage() {
   
   return (
     <div className='w-full md:w-[70%] mx-auto py-10 px-3'>
-        <div className={`${newArr?.length > 0 ? "grid grid-cols-4 gap-3" : "" } w-full`}>
+        <div className={`${newArr?.length > 0 ? "grid grid-cols-1 md:grid-cols-4 gap-3" : "" } w-full`}>
             {
                 newArr?.length > 0 ? newArr.map(item => <Card key={item.id} news={item}/>)
                 : <div className='w-full flex items-center justify-center'><NoNewsFound /></div>
