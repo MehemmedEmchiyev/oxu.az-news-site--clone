@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { useEffect } from 'react';
-import { getAllSlider } from '../redux/sliderSlice';
+import { getAllSlider } from '../../redux/sliderSlice';
 function Hero() {
     const dispatch = useDispatch()
     const {array} = useSelector(store => store.slider.slider)

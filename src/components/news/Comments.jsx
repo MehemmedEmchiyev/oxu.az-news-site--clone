@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addComment, changeStatus, getComments } from '../redux/commentsSlice';
+import { addComment, changeStatus, getComments } from '../../redux/commentsSlice';
 import { Bounce, toast } from 'react-toastify';
 
 

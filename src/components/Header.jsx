@@ -1,11 +1,11 @@
 import { IoSearch } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
-import HeaderSlider from './HeaderSlider';
 import TopBar from './TopBar'
 import { Link, useNavigate } from 'react-router-dom';
 import { FaRegUser } from "react-icons/fa";
 import { useDispatch, useSelector } from 'react-redux';
 import { changeStatue, setValue } from '../redux/searchSlice';
+import HeaderSlider from "./HeaderSlider";
 
 function Header() {
 
